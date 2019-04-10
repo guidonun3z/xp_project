@@ -4,4 +4,4 @@ Aqui debemos ir guardando los archivos que necesitamos para el desarrollo del pr
 
 Primer avance :
 
-Colocar los archivos del diseño de entidades relacion y clases para saber que calses estan utilziando para implemtar el sistema
+Colocar los archivos del diseño de entidades relacion y clases para saber que calses estan utilziando para implentar el sistema.
