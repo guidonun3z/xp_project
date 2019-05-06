@@ -1,0 +1,158 @@
+:root{
+   --fondo: url(img/back.jpg);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: var(--fondo);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+
+.sideback{
+    background: #352741;
+    width: 100%;
+    height: 110%;
+    opacity: .60;
+    position: absolute;
+    z-index: -1;
+}
+
+/* CODIGO PARA EL BANNER */
+.banner{
+    background: #343a40;
+    height: 100px;
+}
+
+.banner img{
+    width: 20%;
+    height: 100%;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.panel{
+    width: 280px;
+    height: 380px;
+    display: inline-block;
+    margin: 100px 1em;
+    color: white;
+    /* border-radius: 8%; */
+}
+
+.panel:hover{
+    width: 310px;
+    height: 410px;
+    transition: 0.2s;
+}
+
+.panel .info p{
+    text-align: center;
+}
+
+.panel .img{
+    height: 200px;
+    
+}
+
+
+.panel img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    /* border-radius: 10%; */
+}
+
+.pan1{
+    background-color: #0e2f3f;
+    background-color:rgb(52, 58, 64);
+    box-shadow: -7px 8px 5px 0px rgba(1, 1, 22, 0.75);
+    box-shadow: -7px 8px 5px 0px rgba(22, 25, 27, 0.753);
+    transition: 0.5s;
+}
+
+.pan1:hover{
+    background-color: #2382b1;
+    box-shadow: -7px 8px 5px 0px rgb(79, 136, 182);
+    transition: 0.5s;
+}
+
+.pan2{
+    background-color: #163f0e;
+    background-color:#343a40;
+    box-shadow: -7px 8px 5px 0px rgb(1, 41, 4);
+    box-shadow: -7px 8px 5px 0px rgba(22, 25, 27, 0.753);
+    transition: 0.5s;
+}
+
+.pan2:hover{
+    background-color: #349122;
+    box-shadow: -7px 8px 5px 0px #4bb835;
+    transition: 0.5s;
+}
+
+.pan3{
+    background-color: #3f0e15;
+    background-color:#343a40;
+    box-shadow: -7px 8px 5px 0px rgba(24, 1, 1, 0.863);
+    box-shadow: -7px 8px 5px 0px rgba(22, 25, 27, 0.753);
+    transition: 0.5s;
+}
+
+.pan3:hover{
+    background-color: #942233;
+    box-shadow: -7px 8px 5px 0px rgb(196, 65, 76);
+    transition: 0.5s;
+}
+
+/* Estilo de los botones */
+
+.panel a{
+    text-decoration: none;
+ 
+}
+
+.panel button{
+    color:white;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 35px;
+    border-radius: 12px;
+    border-style: none;
+    cursor: pointer;
+}   
+
+.pan1 button{
+    background-color: #164963;
+}
+
+.pan1:hover button{
+    background-color: #3b6e75;
+
+}
+
+.pan2 button{
+    background-color: #156305;
+    
+}
+
+.pan3 button{
+    background-color: #640f21;
+}
+
+

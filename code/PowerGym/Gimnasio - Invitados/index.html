@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- LINKS DE BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- LINKS DE CSS -->
+    <link rel="stylesheet" href="../Icons/icons-format.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../Icons/style.css">
+    <script src="validar.js"></script>
+    <title>Registrar Invitado</title>
+</head>
+<body>
+    <div class="sideback"></div>
+    <!-- Barra de Navegacion -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+        <a class="navbar-brand visible-xs-block visible-sm-block" href="../index.html">
+                <span class="icon-view_compact"></span>
+                Inicio
+        </a>
+
+        <a class="navbar-brand visible-xs-block visible-sm-block" href="#">
+            <span class="icon-person_add"></span>
+            Registrar Invitado
+        </a>
+
+        <a class="navbar-brand" href="php/lista.php">
+             <span class="icon-person_list"></span>
+             Lista De Invitados
+        </a>
+    </nav>
+
+    <!-- formulario -->
+     <h1>Registrar Invitado</h1>
+     <form action="php/registrar.php" method="POST" onsubmit="return validar();">
+           <div class="form-group">
+                     <label for="id">ID<span>*</span></label>
+                     <input type="text" class="form-control" id="id" name="id" placeholder="Nombre" >
+           </div>
+
+            <div class="form-group">
+                    <label for="nombre">Nombre <span>*</span></label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" >
+            </div>
+            <div class="form-group">
+                    <label for="apellidoPaterno">Apellido Paterno <span>*</span></label>
+                    <input type="text" class="form-control" id="apellidoPaterno" name="apellidoP" placeholder="Apellido Paterno">
+            </div>
+
+            <div class="form-group">
+                    <label for="formGroupExampleInput3">Apellido Materno</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput3" name="apellidoM" placeholder="Apellido Materno">
+            </div>
+
+            <div class="form-group">
+                    <label for="numeroDocumento" >Numero de documento <span>*</span></label>
+                    <input type="text" class="form-control" id="numeroDocumento" name="numeroDoc" placeholder="Numero de documento">
+            </div>
+
+            <div class="form-group">
+                    <label for="formGroupExampleInput">Tipo de documento <span>*</span></label> <br>
+                    <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="doctype" id="inlineRadio1" value="DNI">
+                            <label class="form-check-label" for="inlineRadio1">DNI</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="doctype" id="inlineRadio2" value="Carnet de extranjeria">
+                            <label class="form-check-label" for="inlineRadio2">Carnet de extranjería</label>
+                    </div>
+            </div>
+
+            <div class="form-group">
+                    <label for="formGroupExampleInput5">Direccion</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput5" name="direccion" placeholder="Direccion">
+            </div>
+
+            <div class="form-group">
+                    <label for="fechaNacimiento" >Fecha de Nacimiento <span>*</span></label>
+                    <input type="text" class="form-control" id="fechaNacimiento" name="fechaNac" placeholder="Fecha de nacimiento">
+            </div>
+
+            <div class="form-group">
+                <label for="fechaInscripcion" >Fecha de Inscripcion <span>*</span></label>
+                <input type="text" class="form-control" id="fechaInscripcion" name="fechaIns" placeholder="Fecha de nacimiento">
+        </div>
+
+            <div class="form-group">
+                    <label for="formGroupExampleInput7">Numero de celular</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput7" name="numeroCel" placeholder="Numero de celular">
+            </div>
+
+            <div class="form-group">
+                <label for="formGroupExampleInput7">Numero de emergencia</label>
+                <input type="text" class="form-control" id="formGroupExampleInput7" name="numeroEmer" placeholder="Numero de celular">
+        </div>
+
+            <div class="form-group">
+                    <label for="formGroupExampleInput8">Correo</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput8" name="correo" placeholder="ejemplo@gmail.com">
+            </div>
+            
+            <div class="form-group">
+                    <label for="formGroupExampleInput">Sexo <span>*</span></label> <br>
+                    <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="M">
+                            <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="F">
+                            <label class="form-check-label" for="inlineRadio2">Femenino</label>
+                    </div>
+            </div>
+
+            <button class="btn btn-primary btn-lg" type="submit">Registrar</button>
+     </form>
+
+
+</body>
+</html>

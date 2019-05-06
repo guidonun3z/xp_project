@@ -1,0 +1,13 @@
+/* body{
+    background-image: url("iC:\xampp\htdocs\inventario\css\diseño.css" ) ;
+} */
+
+th{
+    background: #343a40;
+    color: white;
+    font-weight: bold;
+}
+
+td{
+    background: rgba(7, 78, 90, 0.4);
+}

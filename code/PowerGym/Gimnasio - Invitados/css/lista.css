@@ -1,0 +1,16 @@
+tr th{
+    font-weight: bold;
+    color: white;
+    background: #343a40;
+}
+
+tr td{
+    color: white;
+    background: #3b5a7981;
+}
+
+p{
+    color: white;
+}
+
+

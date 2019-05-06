@@ -1,0 +1,10 @@
+nav span{
+    color:white;
+    margin-right: 0;
+    font-size: 23px;
+}
+
+
+nav a:hover, nav span:hover{
+    color: yellow !important;
+}
